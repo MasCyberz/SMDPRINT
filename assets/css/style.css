@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Universal */
+
+.heading1 {
+    font-size: 56px;
+    font-weight: bold;
+    position: relative;
+}
+
+.heading1::after {
+    content: "";
+    position: absolute;
+    background-color: #3A8ACA;
+    height: 6px;
+    width: 44%;
+    left: 0;
+    bottom: -1px;
+}
+
+.heading2 {
+    font-size: 56px;
+    font-weight: bold;
+    position: relative;
+}
+
+.heading2::after {
+    content: "";
+    position: absolute;
+    background-color: #3A8ACA;
+    height: 6px;
+    width: 22%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.heading3 {
+    font-size: 56px;
+    font-weight: bold;
+    position: relative;
+}
+
+.heading3::after {
+    content: "";
+    position: absolute;
+    background-color: #3A8ACA;
+    height: 6px;
+    width: 34%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.heading4 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.heading4::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 6px;
+    width: 28%;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.heading5 {
+    font-size: 48px !important;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.heading5::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 6px;
+    width: 50%;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-52%);
+    overflow: visible;
+    filter: brightness(80%);
+}
+
+/* Navbar */
+
+.nav-link {
+    font-size: 1.2rem !important;
+    color: rgba(62, 62, 62, 0.751);
+}
+
+.nav-link:hover {
+    color: #3A8ACA;
+}
+
+.tombol-nav {
+    text-decoration: none;
+    /* color: rgba(67, 67, 67, 0.592); */
+    color: white;
+    padding: 6px;
+    background-color: #0D5891;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+
+.tombol-nav:hover {
+    background-color: #3A8ACA;
+    padding: 6px;
+    transition: 0.3s;
+    border-color: #0D5891 !important;
+    color: white;
+
+
+}
+
+/* .btn-outline-primary:hover{
+    background-color: #;
+    border: 0 solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+} */
+
+/* Section 1 */
+
+.carousel {
+    transform: translateY(-4%);
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption h4 {
+    font-size: 3rem !important;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.tombol-hero {
+    text-decoration: none;
+    /* color: rgba(67, 67, 67, 0.592); */
+    color: white;
+    padding: 10px;
+    background-color: #0D5891;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 1.2rem;
+
+}
+
+.tombol-hero:hover {
+    background-color: #3A8ACA;
+    padding: 10px;
+    transition: 0.3s;
+    border-color: #0D5891 !important;
+    color: white;
+}
+
+
+
+
+/* About */
+
+#about {
+    margin-top: 120px;
+}
+
+.about h1 {
+    font-size: 56px;
+}
+
+.about p {
+    font-size: 26px;
+}
+
+
+/* Services */
+
+#services {
+    margin-top: 100px;
+}
+
+.card {
+    padding: 20px 20px 0 20px !important;
+}
+
+/* .card-quest {
+    padding: 55px 20px;
+} */
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+}
+
+
+.card-body h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 20px;
+}
+
+.card-body h3::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 85%;
+    bottom: 36%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+
+/* Pricing */
+
+#pricing {
+    margin-top: 100px;
+}
+
+.single-price {
+    background-color: #00000010;
+    transition: .7s;
+    border-radius: 100px;
+}
+
+.single-price h4 {
+    font-size: 24px;
+}
+
+.price-top h4 {
+    margin-top: 20px;
+}
+
+.price-top {
+    position: relative;
+    color: #fff;
+    background-color: #0D5891;
+    font-size: 30px;
+    padding: 15px 24px 24px;
+    transition: .7s;
+    border-radius: 100px 100px 0 0;
+}
+
+.price-bottom {
+    margin: 0;
+    padding: 0;
+}
+
+.price-bottom ul li {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 10px;
+    padding-top: 16px;
+
+}
+
+.price-btn a {
+    font-size: 20px;
+    color: #fff;
+    background: #0D5891;
+    padding: 8px 64px;
+    margin-top: 32px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+
+
+}
+
+
+/* Portofolio */
+.baju {
+    height: 310px;
+    filter: brightness(80%);
+    z-index: 1;
+}
+
+.kartu {
+    filter: brightness(80%);
+    z-index: 1;
+}
+
+.bag{
+    filter: brightness(80%);
+    z-index: 1;
+}
+.poster{
+    filter: brightness(80%);
+    z-index: 1;
+}
+.mug{
+    filter: brightness(80%);
+    z-index: 1;
+}
+.phone{
+    filter: brightness(80%);
+    z-index: 1;
+}
+
+.content{
+    transform: translateY(-200%);
+    color: white;
+    text-align: center;
+}
+
+.container-porto:hover .overlay{
+    opacity: 0.8;
+}
+
+#porto {
+    margin-top: 100px;
+}
+
+.porto-img {
+    height: 75% !important;
+}
+
+
+
+/* Request Form */
+
+.request-form{
+    margin-top: 100px !important;
+}
+
+
+.request-form label {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.quote-form button {
+    padding: 15px 50px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.712);
+    /* background-color: #3a89cabc; */
+    border: 4px solid #3a89cabc;
+    border-radius: 18px;
+}
+
+.quote-form button:hover{
+    background-color: #3A8ACA;
+}
+
+/* Contact us */
+
+#contact .bi{
+    font-size: 30px;
+}
+
+#contact p{
+    font-size: 12px;
+}
+
+#contact .container-contact{
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Footer */
+
+#footer li {
+    list-style-type: none;
+}
+
+#footer ul{
+    padding: 0 !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    /* Heading */
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 50%;
+        min-height: 100%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #about{
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    #services{
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    #services .card{
+        margin-top: 20px;
+    }
+
+    #pricing{
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    #porto{
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+    .baju,.kartu,.bag,.poster,.mug,.phone{
+        height: 75%;
+    }
+
+    #pricing li {
+        font-size: 18px;
+    }
+
+    .pricing-top h3,h4 {
+        font-size: 30px;
+    }
+
+    .single-price{
+        margin-top: 20px;
+    }
+
+    .carousel-caption{ 
+        bottom: 165px; 
+    }
+
+    .carousel-caption h5 {
+        font-size: 30px;
+    }
+
+    .heading2 {
+        font-size: 3rem;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    .heading2::after {
+        content: "";
+        position: absolute;
+        background-color: #3A8ACA;
+        height: 6px;
+        width: 62%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .heading3 {
+        font-size: 40px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    #porto h2{
+        font-size: 15px !important;
+    }
+
+    .heading3::after {
+        content: "";
+        position: absolute;
+        background-color: #3A8ACA;
+        height: 6px;
+        width: 62%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .heading4 {
+        font-size: 38px;
+    }
+    
+    .heading4::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        height: 6px;
+        width: 58%;
+        bottom: -8px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .heading5 {
+        font-size: 40px !important;
+    }
+
+    #contact .heading5{
+        padding-top: 20px;
+    }
+
+    #contact .container-contact{
+        margin-top: 50px;
+        padding-top: 50;
+        margin-bottom: 50px;
+    }
+    
+    .heading5::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        height: 6px;
+        width: 50%;
+        bottom: -8px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+
+
+    .navbar {
+        background-color: white !important;
+    }
+
+    
+
+    .about img {
+        display: none;
+    }
+
+    .heading1::after {
+        content: "";
+        position: absolute;
+        background-color: #3A8ACA;
+        height: 6px;
+        width: 60%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .about h1 {
+        font-size: 2.5rem;
+        margin-bottom: 52px;
+        font-weight: bold;        
+    }
+
+    .about  h1,p {
+        text-align: center;
+    }
+
+    .about p{
+        font-size: 20px;
+    }
+
+    #req img {
+        display: none;
+    }
+
+    #req svg{
+        margin-top: 50px;
+    }
+
+    .quote-form button {
+        padding: 15px 50px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.712);
+        background-color: #3a89ca;
+        /* border: 4px solid #3a89cabc; */
+        border-radius: 18px;
+    }
+
+    .quote-form button:hover{
+        background-color: #3a89cac4;
+    }
+
+
+    .ft-1>p {
+        text-align: start !important;
+    }
+
+    .semudah-footer{
+        height: 40px;
+    }
+
+    .sekolah-footer{
+        height: 60px;
+    }
+
+}
