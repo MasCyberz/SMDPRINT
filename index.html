@@ -12,6 +12,9 @@
     <!-- Css -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="/assets/img/SEMUDAH LOGO aja.png">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -63,7 +66,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption ">
-                    <h5 class="fw-bold">WELCOME TO <br> SMDPRINT</h5>
+                    <h5 class="fw-bold animate__animated animate__bounce animate__infinite	infinite">WELCOME TO <br> SMDPRINT</h5>
                     <br>
                     <p style="margin-bottom: 2rem;">POWERED BY SEMUDAH</p>
                     <a href="#about" class="tombol-hero">Get Started</a>
@@ -76,7 +79,7 @@
     <!-- About US  -->
 
     <section id="about" style="padding-top: 100px;">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <div class="row about">
                 <div class="col-12 col-md-6 container-fluid">
                     <img src="/assets/img/Office.png" alt="" class="container-fluid">
@@ -97,7 +100,7 @@
     <!-- Services -->
 
     <section id="services" style="padding-top: 100px;">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <h1 class="heading2 text-center">Services</h1>
             <div class="">
                 <div class="row mt-5 mb-5">
@@ -132,7 +135,7 @@
                         <div class="card shadow" style="height: 452px;">
                             <img src="/assets/img/undraw_questions_re_1fy7 1.svg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="text-center mb-4">Printing</h3>
+                                <h3 class="cs text-center mb-4">Customer Service</h3>
                                 <!-- <hr class="mx-auto border-top" style="border-"> -->
                                 <p>We are committed to resolving your problems quickly and efficiently.</p>
                             </div>
@@ -147,7 +150,7 @@
 
     <!-- Pricing -->
     <section id="pricing" style="padding-top: 100px;">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <h1 class="heading2 text-center">Services</h1>
             <div class="row text-center mt-5 mb-5">
                 <div class="col-12 col-lg-4 col-sm-12">
@@ -219,7 +222,7 @@
     <!-- Portofolio -->
 
     <section id="porto" style="padding-top: 100px;">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <h1 class="heading3 text-center">Latest Works</h1>
             <h2 class="fw-semibold text-center mt-4" style="font-size: 20px;">Check out our latest projects.</h2>
             <div class="row text-center gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 mt-4 mb-sm-5">
@@ -271,12 +274,12 @@
     <!-- Porto END -->
 
     <!-- Request a Quote Form -->
-    <section id="req">
+    <section id="req" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#0D5891" fill-opacity="1" d="M0,192L1440,32L1440,320L0,320Z"></path>
         </svg>
-        <div class="pb-5" style="background-color: #0D5891;">
-            <div class="container">
+        <div class="pb-5" style="background-color: #0D5891;" >
+            <div class="container" data-aos="fade-in" data-aos-duration="1000">
                 <h1 class="heading4 text-center">Request a <br> Quote Form</h1>
                 <div class="row request-form">
                     <div class="col-12 col-md-6 container-fluid justify-content-center">
@@ -349,7 +352,7 @@
     <!-- Contact Us -->
 
     <section id="contact">
-        <div class="container-contact container">
+        <div class="container-contact container" data-aos="fade-in" data-aos-duration="1000">
             <div class="row about">
                 <div class="col-12 col-md-6 col-sm-12">
                     <iframe
@@ -480,7 +483,7 @@
         <div class="container mb-3">
             <div class="d-flex align-items-center justify-content-between">
                 <!-- <i class="bi bi-c-circle"></i> Copyright <span id="copyright"></span> || Made by Dimas Alif Ardiansyah With ❤️ -->
-                <p class="mb-0">Copyright Semudah ©<span id="copyright"></span> | Made by Dimas Alif Ardiansyah with ❤️
+                <p class="mb-0">Copyright Semudah © <span id="copyright"></span> | Made by Dimas Alif Ardiansyah with ❤️
                 </p>
                 <a href="" class="text-dark" style="font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
             </div>
@@ -491,7 +494,7 @@
 
 
     <!-- Javascript -->
-    <script src="main.js"></script>
+    
     <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->
     <!-- <script src="
     https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
@@ -510,10 +513,20 @@
 
 
 
-
-
-
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentYear = new Date().getFullYear();
+            var copyrightElement = document.getElementById("copyright");
+            if (copyrightElement) {
+                copyrightElement.innerText = currentYear;
+            }
+        });
+    </script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -531,6 +544,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
         crossorigin="anonymous"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
